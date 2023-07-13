@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/umakBlue"
+    tools:context=".VoteResults">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/university_of_makati_logo" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Vote Results"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chairperson"
+            android:layout_marginTop="10dp"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/electionResultsButton" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/viceChairperson"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chairperson" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/secretary"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viceChairperson" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/treasurer"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secretary" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/auditor"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treasurer" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/fourthYear"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/auditor" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/thirdYear"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourthYear" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/secondYear"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdYear" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/firstYear"
+            android:layout_width="375dp"
+            android:layout_height="375dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondYear" />
+
+        <TextView
+            android:id="@+id/electionResultsButton"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:text="@string/election_results"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

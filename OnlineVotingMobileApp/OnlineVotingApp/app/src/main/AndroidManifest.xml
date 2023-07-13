@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlinevotingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ovs_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ovs_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineVotingApp">
+        <activity
+            android:name=".CheckVoter"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEvaluationLog"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVoteResults"
+            android:exported="false" />
+        <activity
+            android:name=".AdminElectionResults"
+            android:exported="false" />
+        <activity
+            android:name=".DateTimeChoose"
+            android:exported="false" />
+        <activity
+            android:name=".ElectionResults"
+            android:exported="false" />
+        <activity
+            android:name=".VoteResults"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomepage"
+            android:exported="false" />
+        <activity
+            android:name=".VoterHomepage"
+            android:exported="false" />
+        <activity
+            android:name=".VoterChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".VoterChangeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ViewVoterProfile"
+            android:exported="false" />
+        <activity
+            android:name=".VoterProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".VoteCandidate"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEvaluateCandidate"
+            android:exported="false" />
+        <activity
+            android:name=".CandidateHomepage"
+            android:exported="false" />
+        <activity
+            android:name=".CandidateRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".VoterRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

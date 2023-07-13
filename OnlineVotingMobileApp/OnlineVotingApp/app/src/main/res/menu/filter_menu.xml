@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/chairpersonItem"
+        android:title="Chairperson"/>
+
+    <item android:id="@+id/viceChairPersonItem"
+        android:title="Vice Chairperson"/>
+
+    <item android:id="@+id/secretaryItem"
+        android:title="Secretary"/>
+
+    <item android:id="@+id/treasurerItem"
+        android:title="Treasurer"/>
+
+    <item android:id="@+id/auditorItem"
+        android:title="Auditor"/>
+
+    <item android:id="@+id/fourthYearItem"
+        android:title="4th Year Representative"/>
+
+    <item android:id="@+id/thirdYearItem"
+        android:title="3rd Year Representative"/>
+
+    <item android:id="@+id/secondYearItem"
+        android:title="2nd Year Representative"/>
+
+    <item android:id="@+id/firstYearItem"
+        android:title="1st Year Representative"/>
+
+</menu>

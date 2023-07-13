@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/umakBlue"
+    tools:context=".VoterHomepage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/umakBlue">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/university_of_makati_logo" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:paddingBottom="20dp"
+            android:text="List of Candidates"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chairpersonList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viceChairpersonList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/secretaryList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/treasurerList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/auditorList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fourthYearList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/thirdYearList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/secondYearList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/firstYearList"
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="@+id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Log Out"
+            app:layout_constraintStart_toEndOf="@id/voterProfileSettings"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/voterProfileSettings" />
+
+        <Button
+            android:id="@+id/voterProfileSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Voter Profile"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/logOutButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstYearList" />
+
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="CHAIRPERSON"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@+id/chairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/chairText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/chairpersonList"
+            app:layout_constraintEnd_toEndOf="@+id/chairpersonList"
+            app:layout_constraintStart_toStartOf="@+id/chairpersonList"
+            app:layout_constraintTop_toTopOf="@+id/chairpersonList" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="VICE CHAIRPERSON"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/viceChairpersonList"
+            app:layout_constraintStart_toStartOf="@+id/viceChairpersonList"
+            app:layout_constraintTop_toBottomOf="@+id/chairpersonList" />
+
+        <TextView
+            android:id="@+id/viceChairText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/viceChairpersonList"
+            app:layout_constraintEnd_toEndOf="@+id/viceChairpersonList"
+            app:layout_constraintStart_toStartOf="@+id/viceChairpersonList"
+            app:layout_constraintTop_toTopOf="@+id/viceChairpersonList" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="SECRETARY"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/secretaryList"
+            app:layout_constraintStart_toStartOf="@+id/secretaryList"
+            app:layout_constraintTop_toBottomOf="@+id/viceChairpersonList" />
+
+        <TextView
+            android:id="@+id/secretaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/secretaryList"
+            app:layout_constraintEnd_toEndOf="@+id/secretaryList"
+            app:layout_constraintStart_toStartOf="@+id/secretaryList"
+            app:layout_constraintTop_toTopOf="@+id/secretaryList" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="TREASURER"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/treasurerList"
+            app:layout_constraintStart_toStartOf="@+id/treasurerList"
+            app:layout_constraintTop_toBottomOf="@+id/secretaryList" />
+
+        <TextView
+            android:id="@+id/treasurerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/treasurerList"
+            app:layout_constraintEnd_toEndOf="@+id/treasurerList"
+            app:layout_constraintStart_toStartOf="@+id/treasurerList"
+            app:layout_constraintTop_toTopOf="@+id/treasurerList" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="AUDITOR"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/auditorList"
+            app:layout_constraintStart_toStartOf="@+id/auditorList"
+            app:layout_constraintTop_toBottomOf="@+id/treasurerList" />
+
+        <TextView
+            android:id="@+id/auditorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/auditorList"
+            app:layout_constraintEnd_toEndOf="@+id/auditorList"
+            app:layout_constraintStart_toStartOf="@+id/auditorList"
+            app:layout_constraintTop_toTopOf="@+id/auditorList" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="4TH YEAR REPRESENTATIVE"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/fourthYearList"
+            app:layout_constraintStart_toStartOf="@+id/fourthYearList"
+            app:layout_constraintTop_toBottomOf="@+id/auditorList" />
+
+        <TextView
+            android:id="@+id/fourthYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/fourthYearList"
+            app:layout_constraintEnd_toEndOf="@+id/fourthYearList"
+            app:layout_constraintStart_toStartOf="@+id/fourthYearList"
+            app:layout_constraintTop_toTopOf="@+id/fourthYearList" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="3RD YEAR REPRESENTATIVE"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/thirdYearList"
+            app:layout_constraintStart_toStartOf="@+id/thirdYearList"
+            app:layout_constraintTop_toBottomOf="@+id/fourthYearList" />
+
+        <TextView
+            android:id="@+id/thirdYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/thirdYearList"
+            app:layout_constraintEnd_toEndOf="@+id/thirdYearList"
+            app:layout_constraintStart_toStartOf="@+id/thirdYearList"
+            app:layout_constraintTop_toTopOf="@+id/thirdYearList" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="2ND YEAR REPRESENTATIVE"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/secondYearList"
+            app:layout_constraintStart_toStartOf="@+id/secondYearList"
+            app:layout_constraintTop_toBottomOf="@+id/thirdYearList" />
+
+        <TextView
+            android:id="@+id/secondYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/secondYearList"
+            app:layout_constraintEnd_toEndOf="@+id/secondYearList"
+            app:layout_constraintStart_toStartOf="@+id/secondYearList"
+            app:layout_constraintTop_toTopOf="@+id/secondYearList" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="1ST YEAR REPRESENTATIVE"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/firstYearList"
+            app:layout_constraintStart_toStartOf="@+id/firstYearList"
+            app:layout_constraintTop_toBottomOf="@+id/secondYearList" />
+
+        <TextView
+            android:id="@+id/firstYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/firstYearList"
+            app:layout_constraintEnd_toEndOf="@+id/firstYearList"
+            app:layout_constraintStart_toStartOf="@+id/firstYearList"
+            app:layout_constraintTop_toTopOf="@+id/firstYearList" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
